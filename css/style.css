@@ -1,0 +1,547 @@
+/*!
+Theme Name: Goldies Cottage
+Author: Jason Newington
+Author URI:
+Description:
+Version: 1.0.0
+*/
+
+/* Apply a natural box layout model to all elements: http://paulirish.com/2012/box-sizing-border-box-ftw/ */
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+}
+body {
+  width: 100%;
+  height: 100%;
+  padding-top: 90px;
+}
+
+/* Typograhpy */
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Chivo", sans-serif;
+}
+
+h2 {
+  font-size: 30px;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 40px 0;
+}
+
+h3 {
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+.nav li a {
+  font-size: 14px;
+}
+
+.intro {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.hero-overlay h2 {
+  color: #fff;
+}
+
+.section-title.booking a {
+  font-size: 14px;
+  font-weight: 600;
+  padding: 47px 20px;
+}
+
+/* General */
+
+.container-fluid {
+  max-width: 1360px;
+}
+
+a,
+.btn,
+p.link {
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  color: rgb(51, 51, 51);
+}
+
+a:hover,
+a:focus {
+  text-decoration: none;
+  color: rgb(51, 51, 51);
+}
+
+.center {
+  text-align: center;
+}
+
+/* Navbar */
+
+.navbar-default {
+  -webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  background: #fff;
+  border-bottom: 1px solid #ddd;
+  min-height: 90px;
+}
+
+.navbar-default .navbar-collapse {
+  border: none;
+}
+
+.navbar-nav {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.navbar-brand {
+  padding: 14px;
+  height: auto;
+}
+
+.navbar-brand img {
+  width: 316px;
+}
+
+@media screen and (max-width: 767px) {
+  .navbar-brand img {
+    width: 250px;
+  }
+}
+
+.nav li a {
+  text-transform: uppercase;
+  line-height: 29px;
+  height: 54px;
+  border-left: 1px solid #ddd;
+  padding: 10px;
+  background: #fff;
+  border: none;
+  border-top: 1px solid #e7e7e7;
+}
+
+@media screen and (min-width: 800px) {
+  .nav li a {
+    padding: 15px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .nav li a {
+    height: 90px;
+    line-height: 60px;
+    border-left: 1px solid #e7e7e7;
+  }
+}
+
+.nav li a:hover,
+.nav li a:focus {
+  background: #f3f3f3 !important;
+}
+
+.nav li a.booking {
+  font-weight: 600;
+  background: #1ca422;
+  color: #fff;
+  border: none;
+}
+
+.nav li a.booking:hover,
+.nav li a.booking:focus {
+  font-weight: 600;
+  background: #0f6e13 !important;
+  color: #fff;
+}
+
+.navbar-toggle {
+  margin: 10px;
+  display: block;
+}
+
+@media screen and (min-width: 768px) {
+  .navbar-toggle {
+    display: none;
+  }
+}
+
+/* Hero */
+
+.hero-overlay {
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  bottom: 40px;
+  width: 100%;
+}
+
+@media screen and (min-width: 770px) {
+  .hero-overlay {
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    bottom: 40px;
+    width: 100%;
+  }
+}
+
+.hero {
+  background: url(../images/hero.jpg) no-repeat left top;
+  background-size: cover;
+  position: relative;
+  height: 340px;
+}
+
+@media screen and (min-width: 770px) {
+  .hero {
+    background: url(../images/hero.jpg) no-repeat left top;
+    background-size: contain;
+    position: relative;
+    height: auto;
+  }
+}
+
+.hero:before {
+  content: "";
+  float: left;
+  width: 0;
+  height: 0;
+  padding-bottom: 50%;
+}
+
+.hero:after {
+  content: "";
+  display: block;
+  height: 0;
+  overflow: hidden;
+  clear: both;
+  visibility: hidden;
+}
+
+/* Content */
+
+.section-title {
+  width: 100%;
+  background: #f7f7e8;
+}
+
+.section-title.booking {
+  background: #ceedd0;
+}
+
+.section-title.booking h2 {
+  padding: 40px 0 20px 0;
+}
+
+@media screen and (min-width: 770px) {
+  .section-title.booking h2 {
+    padding: 40px 0;
+  }
+}
+
+.section-title.booking .container-fluid {
+  position: relative;
+}
+
+.section-title.booking a {
+  text-transform: uppercase;
+  background: #1ca422;
+  color: #fff;
+  display: block;
+  margin-bottom: 10px;
+  padding: 20px;
+  display: none;
+}
+
+@media screen and (min-width: 770px) {
+  .section-title.booking a {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 47px 20px;
+  }
+}
+
+.section-title.booking a:hover,
+.section-title.booking a:focus {
+  background: #0f6e13 !important;
+}
+
+.block {
+  padding-top: 40px;
+  padding-bottom: 10px;
+}
+
+p {
+  margin-bottom: 30px;
+}
+
+.block a {
+  text-decoration: underline;
+}
+
+.booking-details {
+  background: url(../images/hero.jpg) no-repeat 50% 50%;
+  background-size: cover;
+  padding: 20px 0;
+}
+
+.booking-details.footer {
+  height: 400px;
+}
+
+.white-block {
+  padding: 20px;
+  background: #fff;
+  margin: 0 auto;
+  max-width: 810px;
+}
+
+/* Booking form */
+
+.calendar .ui-widget.ui-widget-content {
+  margin: 0 auto;
+  width: 100%;
+}
+
+.calendar .ui-datepicker td a,
+.calendar .ui-datepicker td span {
+  padding: 15px;
+  text-align: center;
+}
+
+.calendar .ui-datepicker .ui-datepicker-title {
+  margin: 10px;
+}
+
+.calendar .ui-datepicker .ui-datepicker-prev,
+.calendar .ui-datepicker .ui-datepicker-next {
+  background: #fff;
+  padding: 25px;
+}
+
+.calendar .undefined a {
+  background: lightgreen;
+  border: 1px solid white;
+}
+
+.calendar .ui-datepicker-unselectable span.ui-state-default {
+  background: pink;
+  border: 1px solid white;
+}
+
+.calendar .key {
+  margin-top: 40px;
+}
+
+.calendar .key .color-block {
+  width: 20px;
+  height: 15px;
+  display: inline-block;
+  margin: 0 5px 0 20px;
+}
+
+@media screen and (max-width: 767px) {
+  .ui-datepicker {
+    padding: 0;
+  }
+
+  .ui-datepicker td {
+    padding: 0;
+    background: white;
+  }
+
+  .calendar .key {
+    margin-top: 20px;
+  }
+
+  .calendar .key .color-block {
+    margin: 0 5px 0 10px;
+  }
+}
+
+.calendar .key .color-block.booked {
+  background: pink;
+}
+
+.calendar .key .color-block.available {
+  background: lightgreen;
+}
+
+.calendar .key .color-block.selected {
+  background: #007fff;
+}
+
+.booking-enquiry {
+  text-align: center;
+  padding: 20px;
+  max-width: 810px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 767px) {
+  .booking-enquiry {
+    padding: 0;
+    margin: 0 auto;
+  }
+}
+
+.booking-details p {
+  margin: 10px 0;
+}
+
+.date-details {
+  display: none;
+}
+
+.booking-details h3 {
+  margin: 30px 0;
+}
+
+.booking-details .white-block {
+  padding: 0 10px 20px 10px;
+}
+
+.booking-table {
+  display: none;
+  margin-bottom: 30px;
+}
+
+.booking-form .form-group {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.booking-details button {
+  margin-bottom: 30px;
+}
+
+#booking-summary {
+  display: none;
+  padding: 0;
+}
+
+.calendar {
+  margin-bottom: 40px;
+}
+
+/* Footer */
+
+footer {
+  background: #eeeeee;
+}
+
+.contact-title_h,
+.contact-field_h {
+  display: none;
+}
+
+.contact-details img {
+  float: left;
+  padding-right: 20px;
+  opacity: 0.75;
+}
+
+.contact-details p {
+  margin-bottom: 5px;
+}
+
+form {
+  margin-bottom: 40px;
+}
+
+.btn {
+  color: #fff;
+  border: none;
+  padding: 20px;
+  border-radius: 2px;
+  background-color: #1ca422;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  float: right;
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: #0f6e13;
+  color: #fff;
+}
+
+footer p {
+  text-align: center;
+  margin: 0;
+  padding: 0 0 40px 0;
+}
+
+.message {
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+  padding: 10px;
+  margin: 0 0 20px 0;
+}
+
+#mail-sent.message,
+#mail-sent_message.message {
+  margin: 0;
+}
+
+.message.error {
+  border-color: #ff7070;
+  background: #facbcb;
+  color: #a90000;
+}
+
+.message.success {
+  border-color: #12bb01;
+  background: #d1f1d0;
+  color: #0b5901;
+}
+
+.message.warning {
+  background: #ffeb9c;
+  border-color: #ba882d;
+  color: #7c5104;
+}
+
+.message.advice {
+  border-color: #dcdcdc;
+}
+
+textarea {
+  width: 100%;
+  height: 200px;
+}
+
+.modal li {
+  margin: 10px 0;
+}
+
+.modal {
+  max-height: 100%;
+}
+
+footer a {
+  whitsepace: nowrap;
+}
+
+.form-control {
+  padding: 25px;
+}
